@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevHub Dashboard</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">DevHub</div>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Projetos</a>
+        <a href="#">Comunidade</a>
+        <a href="#">Recursos</a>
+      </nav>
+      <img src="https://i.pravatar.cc/40?img=1" alt="user" class="user-avatar" />
+    </header>
+
+    <main class="main-container">
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="https://i.pravatar.cc/80?img=3" alt="avatar" />
+          <h3>João Silva</h3>
+          <p>Game Developer</p>
+        </div>
+        <div class="stats">
+          <p><b>Qtd. Logs:</b> 24</p>
+          <p><b>Total de Bugs:</b> 156</p>
+          <p><b>Horas Trabalhadas:</b> 340h</p>
+        </div>
+        <div class="filters">
+          <h4>Filtros</h4>
+          <label><input type="checkbox" checked /> Programação</label><br />
+          <label><input type="checkbox" /> Arte 3D/2D</label><br />
+          <label><input type="checkbox" /> Sound Design</label>
+        </div>
+      </aside>
+
+      <section class="feed">
+        <button id="new-log-btn">+ Criar Novo Log</button>
+        <div id="logs-container"></div>
+      </section>
+
+      <aside class="rightbar">
+        <h4>Atividade Recente</h4>
+        <ul id="activity"></ul>
+
+        <h4>Desenvolvedores em Destaque</h4>
+        <ul>
+          <li><img src="https://i.pravatar.cc/30?img=6" /> Roberto Tech</li>
+          <li><img src="https://i.pravatar.cc/30?img=5" /> Sofia Arts</li>
+        </ul>
+      </aside>
+    </main>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
